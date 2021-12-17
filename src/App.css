@@ -1,0 +1,175 @@
+body {
+  background-color: #a5a4ce;
+  font-family: System,monospace;
+  font-size: 10pt;
+}
+
+input, textarea {
+  font-family: System,monospace;
+  padding: 1px 0 1px 0;
+  border-radius: 0;
+  background: #00f;
+  color: #0ff;
+  width: 100%;
+  max-width: 100%;
+  font-size: 12pt;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #0ff;
+}
+
+.button, button {
+  font-family: System,monospace;
+  display: inline-block;
+  font-weight: bolder;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  background: green;
+  padding: 0 1em;
+  -webkit-box-shadow: 0.5em 0.5em 3px rgb(0 0 0 / 50%);
+  box-shadow: 0.5em 0.5em 3px rgb(0 0 0 / 50%);
+  position: relative;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  border: 1px outset green;
+  cursor: pointer;
+}
+
+button:hover {
+  -webkit-transform: translate3d(0.25em,0.25em,10em);
+  transform: translate3d(0.25em,0.25em,10em);
+  -webkit-box-shadow: 0 0 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 0 rgb(0 0 0 / 50%);
+  background: #32cd32;
+}
+
+.button:first-letter, button:first-letter {
+  color: #ff0;
+}
+
+#waveButton {
+  margin-top: 1em;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 640px;
+}
+
+.window {
+  position: relative;
+  cursor: default;
+  margin: 2em auto;
+  width: 80%;
+  background: #3465a4;
+  color: #fff;
+  border: 6px double #fff;
+  padding: 1em;
+  -webkit-box-shadow: 0 0 0 3px #3465a4, 1em 1em 3px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 0 3px #3465a4, 1em 1em 3px 0 rgb(0 0 0 / 50%);
+  max-width: 700px;
+}
+
+.window.white {
+  background: silver;
+  color: #000;
+  border-color: #fff;
+  -webkit-box-shadow: 0 0 0 3px silver, 1em 1em 3px 0 rgb(0 0 0 / 50%);
+  box-shadow: 0 0 0 3px silver, 1em 1em 3px 0 rgb(0 0 0 / 50%);
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.forminput {
+  border-radius: 12px;
+  border-color:lightblue;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  max-width: 640px;
+}
+.forminput:focus {
+  border-color: green;
+  background-color: white;
+}
+
+.inputHeader {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.totalWaves {
+  text-align: center;
+}
+
+.waveNote {
+  background-color: skyblue;
+  marginTop: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.trade-buttons {
+  text-align: center;
+  margin: 0;
+}
+
+.fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+  border-image: initial;
+}
+
+.waveDetails {
+  margin: 0.5em auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 45px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-text {
+  text-decoration: none;
+  color: #000;
+}
